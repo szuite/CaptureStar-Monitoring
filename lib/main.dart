@@ -1,7 +1,6 @@
+import 'package:capturestarmonitoring/constants/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'constants/constants/app_routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,14 +11,13 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  //TEST
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      initialRoute: "/home",
+      initialRoute: "/login",
       getPages: AppRoutes.routes,
     );
   }
