@@ -1,5 +1,6 @@
-import 'package:capturestarmonitoring/home.dart';
+import 'package:capturestarmonitoring/ui/home.dart';
 import 'package:capturestarmonitoring/ui/login_page.dart';
+import 'package:capturestarmonitoring/ui/setting.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
@@ -7,6 +8,7 @@ class AppRoutes {
 
   static final routes = [
     GetPage(name: '/home', page: () => const Home()),
-    GetPage(name: '/login', page: () => LoginPage())
+    GetPage(name: '/login', page: () => LoginPage()),
+    GetPage(name: '/setting', page: () => const Setting())
   ];
 }

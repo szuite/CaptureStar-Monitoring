@@ -10,8 +10,10 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context).textTheme;
+
     return SizedBox(
-      height: 500,
+      height: MediaQuery.of(context).size.height / 2,
       width: MediaQuery.of(context).size.width,
 
       child: Container(
@@ -75,15 +77,16 @@ class LoginForm extends StatelessWidget {
 
               // Login 버튼
               Padding(
-                padding: const EdgeInsets.only(bottom: 100),
+                padding: const EdgeInsets.only(bottom: 80),
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
+                      primary: AppThemes.blue,
                         minimumSize: const Size(double.infinity, 62),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20))),
-                    child: const Text('로그인', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),),
+                    child: Text('로그인', style: theme.button),
                     onPressed: () => Get.to(MainPage()),
                   ),
                 ),
