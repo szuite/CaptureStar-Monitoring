@@ -16,11 +16,11 @@ class WeatherInfoPage extends StatelessWidget {
     print('WeatherInfoPage');
     final theme = Theme.of(context).textTheme;
 
-    WeatherController controller = Get.find();
+    WeatherController controller = Get.find();/*
     Future<Position> position = controller.getLocation();
     position.then((position) =>
         controller.getWeather(lat: position.latitude, lon: position.longitude));
-
+*/
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SafeArea(

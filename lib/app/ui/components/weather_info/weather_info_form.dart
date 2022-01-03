@@ -14,7 +14,7 @@ final weatherIcon = {
 };
 
 final weatherItem = {'온도', '습도', '풍속', '풍향'};
-final weatherData = [];
+final weatherData = {'50', '15', '15m/s', '서'};
 
 // 기상정보 내부 화면
 
@@ -23,7 +23,8 @@ class WeatherInfoForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WeatherController controller = Get.find();
+    //WeatherController controller = Get.find();
+    //controller.getWeather(lat: 100, lon: 50);
 
     final theme = Theme.of(context).textTheme;
     return SizedBox(
@@ -129,13 +130,13 @@ class WeatherInfoForm extends StatelessWidget {
                 ),
               ],
             ),
-            child: Row(
+         /*   child: Row(
               children: [
                 Text('11'),
                 Text('11')
               ],
-            )
-            /*child: GridView.builder(
+            )*/
+            child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemCount: 4,
@@ -173,19 +174,19 @@ class WeatherInfoForm extends StatelessWidget {
                             width: 20,
                           ),
 
-                          *//*  Obx(() {
+                       /*     Obx(() {
                             return Text(controller.weatherModel.value.main!.temp.toString());
                           }
-                          ),*//*
+                          ),*/
                           Text(weatherItem.elementAt(index), style: theme.bodyText2?.copyWith(color: AppThemes.subTextColor)),
-                          //Text(weatherData.elementAt(index), style: theme.bodyText2?.copyWith(fontSize: 14.0, fontWeight: FontWeight.w700)),
+                          Text(weatherData.elementAt(index), style: theme.bodyText2?.copyWith(fontSize: 14.0, fontWeight: FontWeight.w700)),
                         ],
                       ),
                     ),
                   ),
                 );
               },
-            ),*/
+            ),
           ),
         ],
       ),
