@@ -37,17 +37,33 @@ dependencies:
   google_fonts: ^2.1.0
   get: ^4.3.6
   flutter_svg: ^0.22.0
-  persistent_bottom_nav_bar: ^4.0.2
   animated_bottom_navigation_bar: ^0.3.2
   auto_size_text: ^3.0.0-nullsafety.0
   get_storage: ^2.0.3
   material_segmented_control: ^3.1.2
   responsive_grid: ^2.0.0
+  syncfusion_flutter_gauges: ^19.3.47
+  fl_chart: ^0.40.2
+  settings_ui: ^1.0.0
 
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+
+  intl: ^0.17.0
+  retrofit: ^3.0.0
+  dio: ^4.0.4
+  json_annotation: ^4.4.0
+  logger: ^1.1.0
+  permission_handler: ^8.3.0
+  geolocator: ^8.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  retrofit_generator: ^3.0.0+2
+  build_runner: ^2.1.5
+  json_serializable: ^6.1.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -69,7 +85,9 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/images/face/smile.svg
+    - assets/images/face/
+    - assets/images/weather/
+    - assets/json/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -87,6 +105,8 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+
+
   fonts:
     - family: Roboto
       fonts:

@@ -1,0 +1,42 @@
+[
+  {
+    "idx": 1,
+    "date": "2021-11-30",
+    "power_generation": 30.0
+  },
+  {
+    "idx": 2,
+    "date": "2021-12-01",
+    "power_generation": 40.0
+  },
+  {
+    "idx": 3,
+    "date": "2021-12-02",
+    "power_generation": 50.0
+  },
+  {
+    "idx": 4,
+    "date": "2021-12-03",
+    "power_generation": 70.0
+  },
+  {
+    "idx": 5,
+    "date": "2021-12-04",
+    "power_generation": 65.0
+  },
+  {
+    "idx": 6,
+    "date": "2021-12-05",
+    "power_generation": 55.0
+  },
+  {
+    "idx": 7,
+    "date": "2021-12-06",
+    "power_generation": 30.0
+  },
+  {
+    "idx": 8,
+    "date": "2021-12-07",
+    "power_generation": 10.0
+  }
+]
